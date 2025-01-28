@@ -1,0 +1,222 @@
+@media screen and (max-width: 868px) {
+    .navbar .menu {
+        display: none;
+    }
+
+    .navbar .menu-icon {
+        display: block;
+    }
+    .brand img {
+        height: 25%;
+        width: 25%;
+    }
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 1068px) {
+    .cover-container {
+        flex-direction: column; /* تبدیل به ستون برای موبایل */
+        align-items: center; /* وسط چین عمودی */
+        padding: 50px 20px;
+    }
+
+    .cover-container h1 {
+        width: 300px;
+        padding-left: 20px;
+        font-size: 32px; /* کاهش اندازه فونت */
+        text-align: center; /* وسط چین در موبایل */
+        margin-bottom: 20px;
+        border-left: 10px solid #ff7300; /* کاهش ضخامت خط */
+    }
+
+    .cover-heading {
+        margin-left: -10px;
+        padding-left: 20px;
+        bottom: 0;
+        text-align: center;
+    }
+
+    .cover-heading p {
+        width: 80%;
+        padding-left: 20px;
+        border-left: 10px solid rgb(122, 35, 235); /* کاهش ضخامت خط */
+    }
+
+    .cover-container svg{
+        width: 300px; /* تنظیم عرض برای موبایل */
+        height: auto;
+        margin-right: 0; /* حذف margin برای موبایل */
+        position: relative; /* تنظیم موقعیت برای جلوگیری از جابجایی */
+        margin-bottom: 20px; /* فضای پایین برای موبایل */
+    }
+    .cover-container img {
+        left: 70px;
+        bottom: 320px;
+        width: 450px; /* تنظیم عرض برای موبایل */
+        height: auto;
+        margin-right: 0; /* حذف margin برای موبایل */
+        position: relative; /* تنظیم موقعیت برای جلوگیری از جابجایی */
+        margin-bottom: -320px; /* فضای پایین برای موبایل */
+
+    }
+    .hr1 {
+        width: 80%; /* عرض کامل برای موبایل */
+        height: 0.1px; /* کاهش ضخامت خط */
+    }
+    .cover-heading .btn-group { 
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    .card-container {
+        row-gap: 20px;
+        flex-direction: column;
+    }
+    .card-section {
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column; /* تغییر به ستون برای بهینه‌سازی */
+    }
+    
+    .card-section h2 {
+        text-align: center;
+        width: 300px;
+        line-height: 1.2; /* تنظیم فاصله */
+        vertical-align: middle;
+    }
+    
+    .card-section p {
+        transform: translateX(-50%);
+        position: relative;
+        left: 50%;
+        width: 250px; /* کاهش عرض توضیحات */
+        font-size: 14px;
+        text-align: center; /* مرکز قرار دادن متن */
+    }
+    .card-heading svg  {
+        display: flex;
+        width: 300px;
+        height: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 10px;
+    }
+    
+    .card-container {
+        position: relative;
+        top: 15px;
+        display: flex;
+        justify-content: center; /* Center the cards */
+        perspective: 1000px; /* Enables the 3D effect */
+    }
+    .description-container {
+        margin-top: -30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .description-container svg {
+        margin: -30px auto 0px auto;
+        width: 300px;
+        height: 300px;
+    }
+    .header-description {
+        padding: 10px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 320px;
+
+    }
+    .profile-card {
+        display: none;
+    }
+    }
+    
+    @media (max-width: 768px) {
+        .footer {
+            text-align: center;
+        }
+    
+        .footer-container {
+            grid-template-columns: 1fr;
+        }
+    
+        .footer-about,
+        .footer-links,
+        .footer-contact,
+        .footer-social {
+            margin-bottom: 30px;
+        }
+    
+        .footer-contact ul li {
+            justify-content: center; /* وسط‌چین کردن آیکون‌ها و متن‌های تماس */
+        }
+    
+        .footer-social .social-media {
+            justify-content: center; /* وسط‌چین کردن آیکون‌های شبکه‌های اجتماعی */
+        }
+    }
+    
+/* برای سایز‌های کوچکتر از 768px (مثلاً تبلت و موبایل): استفاده از Grid */
+@media (max-width: 768px) {
+    .vector-container {
+        display: none;
+    }
+}
+
+/* برای سایز‌های کوچکتر از 480px (موبایل) */
+@media (max-width: 480px) {
+    .vector svg {
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        padding: 8px;
+        background-color: #ff730033;
+        fill: var(--two-second-color);
+        vertical-align: middle;
+    }
+    .vector {
+        margin: 0 auto;
+    }
+}
+@media (max-width: 768px) {
+    .preview-section {
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    .preview-container {
+        flex-direction: column;
+        margin: 20px;
+    }
+    
+    .card-cont2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .preview-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card-heading2 h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .card-heading2 p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .btn-container a {
+        margin: 10px 5px;
+    }
+}

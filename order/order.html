@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نکست وب | NextWeb</title>
+    <link rel="x icon" href="../assets/logo.png">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="" class="nav_req">مشاهده نمونه ها</a>
+        <div class="right_section">
+            <div class="nav_content">
+                <a href="../index.html#aboutus">درباره ما</a>
+                <a href="order.html">ارتباط با ما</a>
+                <a href="../index.html#faq">سوالات</a>
+                <a href="order.html">سفارش سایت</a>
+            </div>
+            <img src="../assets/logo.png" alt="لوگو" onclick="window.location.href='../index.html'" style="cursor: pointer;">
+
+            <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+    <nav class="mobile_menu">
+        <div class="close-menu" onclick="toggleMenu()">✖</div>
+        <a href="" class="nav_req_mobile">مشاهده نمونه‌ها</a>
+        <a href="">درباره ما</a>
+        <a href="order.html">ارتباط با ما</a>
+        <a href="">سوالات</a>
+        <a href="order.html">سفارش سایت</a>
+    </nav>
+    <h2>برای سفارش و اطلاعات بیشتر با ما در راه های زیر و یا با پشتیبانی در ارتباط باشید,</h2>
+    <div class="social_container">
+        <a href="https://discord.gg/ajn7f2bZFE" class="social_item">
+            دیسکورد
+            <i class="fa-brands fa-discord"></i>
+        </a>
+        <a href="https://t.me/SoulVage" class="social_item">
+            تلگرام
+            <i class="fa-brands fa-telegram"></i>
+        </a>
+    </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.mobile_menu');
+            menu.classList.toggle('show');
+        
+            if (menu.classList.contains('show')) {
+                document.body.style.overflow = 'hidden'; // غیرفعال کردن اسکرول
+            } else {
+                document.body.style.overflow = 'auto'; // فعال کردن اسکرول
+            }
+        }
+        </script>
+        <script type="text/javascript">
+            !function(){var i="pbdfsp",a=window,d=document;function g(){var g=d.createElement("script"),s="https://www.goftino.com/widget/"+i,l=localStorage.getItem("goftino_"+i);g.async=!0,g.src=l?s+"?o="+l:s;d.getElementsByTagName("head")[0].appendChild(g);}"complete"===d.readyState?g():a.attachEvent?a.attachEvent("onload",g):a.addEventListener("load",g,!1);}();
+          </script>
+</body>
+</html>

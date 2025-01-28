@@ -1,0 +1,1269 @@
+@font-face {
+    font-family: 'IranSans';
+    src: url('font/IranSans.ttf') format('truetype');
+}
+
+* {
+    font-family: 'IranSans', sans-serif;
+}
+:root {
+    --background-color: #F0F0F0;
+    --second-accent: #F2F2F2;
+    --text-color: #000000;
+    --accent-color: #FF0000;
+    --primary-color: #323BEA;
+    --secondary-color: #FFFFFF;
+    --light-text-color: #6B6B6B;
+}
+input {
+    font-family: 'IranSans', sans-serif;
+}
+svg {
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    font-family: 'IranSans', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+#promo-bar {
+    background: linear-gradient(45deg, #000000, #0a0a0a, #131313, #181818, #242424);
+    color: #ffffff;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 23px;
+}
+
+.promo-text {
+    padding: px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.view-btn {
+    margin-right: 470px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 1px 7px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 11px;
+    transition: all 0.2s ease;
+}
+
+.view-btn:hover {
+    background-color: #b8b8b8;
+    color: rgb(0, 0, 0);
+}
+
+.close-btn {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 15px;
+}
+.top-nav {
+    align-items: center;
+    height: 5px;
+    padding: 20px 0px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 290px;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: var(--secondary-color);
+    z-index: 101;
+}
+.top-nav-right {
+    display: flex;
+    gap: 30px;
+}
+.auth {
+    align-items: center;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.space {
+    font-weight: 100;
+    font-size: 20px;
+}
+.login a {
+    position: relative;
+    bottom: 2.5px;
+}
+/* Top Nav */
+:root {
+    --light-text-color: #6B6B6B; 
+    --second-accent: #FFFFFF; 
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 35%;
+    border-radius: 14px;
+    background-color: #F2F2F2;
+    padding: 0 20px 0px 15px;
+    justify-content: space-between; 
+}
+
+.search-icon svg {
+    position: relative;
+    top: 2px;
+    color: var(--light-text-color);
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    outline: none; 
+    color: var(--light-text-color);
+    background-color: transparent; 
+    font-size: 12px; 
+    height: 100%; 
+    flex-grow: 1; 
+    text-align: right; 
+    padding-right: 10px;
+}
+#talking-mic {
+    fill: #8d8d8d;
+    margin-left: 5px;
+    transition: all 0.3s ease;
+}
+
+/* زمانی که میکروفون فعال است */
+#talking-mic.listening {
+    fill: #6401EE; /* رنگ قرمز روشن */
+}
+
+/* افکت چشمک زن */
+#talking-mic.blinking {
+    animation: blink 2s infinite alternate;
+}
+
+/* انیمیشن چشمک زن */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.mid-nav {
+    box-shadow: rgba(0, 0, 0, 0.308) 0px 0px 4px;
+    align-content: center;
+    height: 200px;
+    background-color: white;
+    z-index: 101;
+}
+
+.top-mid-nav {
+    margin-left: 10px;
+    gap: 60px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    height: 86px;
+}
+
+.logo img {
+    width: 214px;
+    height: 80px;
+}
+
+.vertical-line {
+    width: 1px;       
+    height: 50px;      
+    background-color: #d1d1d1;
+    
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.add-to-cart svg {
+    position: relative;
+    fill: rgb(156, 156, 156);
+    width: 33px;
+    height: 33px;
+    transition: all 0.2s ease;
+}
+
+
+.cart-text {
+    position: absolute;
+    top: 56%;
+    left: 10px; /* مکان اولیه خارج از دید */
+    transform: translateY(-50%) translateX(-10px); /* حرکت از سمت چپ */
+    opacity: 0; /* شروع شفاف */
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 3px;
+    border: 1px solid rgba(204, 204, 204, 0.747);
+    background-color: black;
+    white-space: nowrap; /* جلوگیری از شکست متن */
+    transition: all 0.3s ease-in; /* تنظیم برای ورود */
+    margin-left: 10px;
+    padding: 3px 6px 3px 6px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.cart-text.fast-exit {
+    transition: all 0.2s ease-out; /* سریع‌تر برای خروج */
+}
+
+.add-to-cart:hover {
+    transform: translateX(-40%);
+
+}
+.add-to-cart:hover .cart-items {
+  opacity: 0;
+}
+
+.add-to-cart:hover .cart-text {
+    left: 30px; /* مکان نهایی */
+    opacity: 1; /* نمایش */
+    transform: translateY(-50%) translateX(0%);
+}
+
+.cart-items {
+    align-content: center;
+    width: 18px;
+    height: 18px;
+    background: linear-gradient(120deg, #6401EE, #8E00C6);
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+.cart-items a {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 11px;
+}
+/* ...................................... */
+
+/* کانتینر اصلی */
+.cart-container {
+    visibility: hidden; 
+    position: fixed;
+    top: 24.5%;
+    left: 23%;
+    transform: translate(-50%, -20%);
+    width: 350px;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 10000000;
+    height: 405px;
+    opacity: 0; /* شروع با شفافیت صفر */
+    transition: transform 0.5s ease, opacity 0.3s ease, visibility 0.6s ease; /* انیمیشن */
+
+}
+
+.cart-container.show {
+    visibility: visible; /* نمایش */
+    transform: translate(-50%, 0); /* مکان نهایی */
+    opacity: 1; /* شفافیت کامل */
+}
+
+/* سربرگ سبد خرید */
+.cart-header {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.cart-header img {
+    width: 250px;
+    height: auto;
+}
+/* خط جداکننده */
+.cart-divider {
+    border: none;
+    height: 1px;
+    margin: 0px 10px 0px 10px;
+    background-color: #bdbdbd;
+}
+
+.chart-title {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 22px -4px 22px;
+    font-size: 12px;
+    
+}
+.chart-title p:nth-child(2){
+    margin-right: 65px;
+}
+.chart-title p:nth-child(3){
+    margin-right: 40px;
+}
+
+/* لیست محصولات */
+.cart-products {
+    max-height: 180px;
+    overflow-y: auto;
+    padding: 2px 3px 10px 3px;
+    width: 380px;
+    position: relative;
+    right: 5%;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* کارت محصول */
+.product-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* فاصله بین عناصر */
+    padding: 0px 0px;
+    padding: 5px 0px;
+    border-radius: 7px;
+    margin: 0px 10px;
+    background-color: #F3F3F3;
+}
+.product-card svg {
+    margin-top: 1px;
+    margin-right: 5px;
+    fill: rgb(209, 209, 209);
+    transition: all 0.2s ease;
+}
+.product-card svg:hover {
+    fill: #cc1f00;
+}
+.product-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-left: 10px; /* فاصله از تعداد */
+}
+
+/* تعداد محصول */
+.product-card p {
+    font-size: 14px;
+    margin: 0;
+    padding: 0 10px; /* فاصله مناسب */
+    color: #555;
+}
+
+/* اطلاعات محصول */
+.product-info {
+    display: flex;
+    flex-direction: column; /* چیدمان اطلاعات به‌صورت ستونی */
+    text-align: right; /* تراز کردن به راست */
+    margin-top: -13px;
+}
+
+.product-info h3 {
+    font-size: 14px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    width: 120px;
+    color: #333;
+}
+
+.product-info .product-price {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px; /* فاصله از اسم محصول */
+}
+
+/* فوتر سبد خرید */
+.cart-footer {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;    
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    width: 360px;
+    padding: 20px;
+    right: 27px;
+
+}
+
+/* دکمه خرید */
+.buy-button {
+    width: 150px;
+    padding: 10px;
+    background-color: #C34242;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 0.2s ease;
+}
+
+.buy-button:hover {
+    background-color: #0253ce;
+}
+
+/* توضیحات پایین */
+.cart-note {
+    font-size: 12px;
+    color: #888;
+    text-align: right;
+    margin-top: 0px;
+    width: 180px;
+}
+
+
+/* ...................................... */
+
+/* استایل اسکرول‌بار برای Webkit */
+.cart-products::-webkit-scrollbar {
+    width: 6px; /* عرض اسکرول‌بار */
+}
+
+.cart-products::-webkit-scrollbar-track {
+    background: #f0f0f0; /* پس‌زمینه ناحیه اسکرول */
+    border-radius: 10px;
+}
+
+.cart-products::-webkit-scrollbar-thumb {
+    background: #888; /* رنگ اسکرول */
+    border-radius: 10px;
+}
+
+.cart-products::-webkit-scrollbar-thumb:hover {
+    background: #555; /* تغییر رنگ هنگام هاور */
+}
+
+
+.horizontal-line {
+    margin: 30px auto 25px auto;
+    width: 67.71%;
+    outline: none;
+    border: none;
+    height: 1px;
+    background-color: #C3C3C3;
+}
+
+/* mid nav */
+
+.bottum-mid-nav {
+    align-content: center;
+    align-items: center;
+    height: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 78px;
+}
+.phone-number img {
+    width: 25px;
+    height: 25px;
+}
+.phone-number {
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+    font-size: 15px;
+}
+.bottum-mid-nav-right {
+    gap: 25px;
+    font-size: 9px;
+    display: flex;
+    flex-direction: row;
+}
+
+.hypelink-wrap {
+    position: relative;
+}
+
+.hypelink-wrap a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #333;
+    transition: color 0.3s ease;
+    text-align: right;
+}
+
+.hypelink-wrap a:hover {
+    background-color: #891de800;
+}
+/* اورلی */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000048;
+    backdrop-filter: blur(9px);
+    z-index: 100;
+    opacity: 0; /* شروع با شفافیت صفر */
+    pointer-events: none; /* کلیک غیرفعال */
+    transition: opacity 0.6s ease; /* انیمیشن نرمی */
+}
+
+/* وقتی نمایش داده می‌شود */
+.overlay.show {
+    opacity: 1; /* نمایش کامل */
+    pointer-events: auto; /* کلیک فعال */
+}
+.overlay2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000048;
+    backdrop-filter: blur(9px);
+    z-index: 100;
+    opacity: 0; /* شروع با شفافیت صفر */
+    pointer-events: none; /* کلیک غیرفعال */
+    transition: opacity 0.6s ease; /* انیمیشن نرمی */
+}
+
+/* وقتی نمایش داده می‌شود */
+.overlay2.show {
+    opacity: 1; /* نمایش کامل */
+    pointer-events: auto; /* کلیک فعال */
+}
+
+
+
+/* Dropdown Menu */
+/* منوی دراپ‌داون */
+/* استایل برای منوی دراپ‌داون */
+/* منوی اصلی */
+.dropdown-menu {
+    opacity: 0;
+    visibility: hidden; /* منو پنهان است */
+    transform: translateY(-10px); /* شروع انیمیشن با حرکت از بالا */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 20px 0px 10px 0px;
+    margin: 5px 0px 0px 0px;
+    min-width: 200px;
+    z-index: 1000;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
+    border-radius: 0px 0px 7px 7px;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible; /* منو نمایان می‌شود */
+    transform: translateY(0); /* حرکت به موقعیت اصلی */
+}
+
+/* ساب‌منو */
+.dropdown-submenu {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px); /* شروع انیمیشن با حرکت از بالا */
+    position: absolute;
+    top: 0;
+    right: 100%;
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    min-width: 150px;
+    z-index: 1001;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
+}
+
+.dropdown-submenu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* حرکت به موقعیت اصلی */
+}
+.dropdown-menu li {   
+    overflow: hidden;
+}
+
+/* لینک‌ها در dropdown-menu */
+.dropdown-menu li a {
+    
+    font-size: 12px;
+    text-decoration: none;
+    color: #2c2c2c;
+    display: block;
+    padding: 8px 18px;
+    transition: all 0.3s ease;
+}
+
+/* تغییر استایل لینک‌ها هنگام هاور */
+.dropdown-menu li a:hover {
+    background-color: #017bee1f;
+    color: #0c0c0c;
+    transform: translateX(-15px);
+    border-radius: 0px 10px 10px 0px;
+}
+
+/* ساب منو */
+
+/* لینک‌ها در ساب منو */
+.dropdown-submenu li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 6px 10px;
+    transition: all 0.3s ease;
+}
+
+/* تغییر استایل لینک‌های ساب منو هنگام هاور */
+
+/* نمایش ساب منو با انیمیشن */
+.dropdown-item:hover .dropdown-submenu {
+    opacity: 1; /* نمایش کامل */
+    visibility: visible; /* نمایش ساب منو */
+    transform: translateX(0); /* به موقعیت اصلی خود می‌رسد */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* انیمیشن شفافیت و حرکت */
+}
+
+/* نمایش منوی اصلی با انیمیشن */
+.dropdown:hover .dropdown-menu {
+    opacity: 1; /* نمایش کامل */
+    visibility: visible; /* نمایش منو */
+    transform: translateY(0); /* به موقعیت اصلی خود می‌رسد */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* انیمیشن شفافیت و حرکت */
+}
+
+
+.scroll-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 101;
+    background-color: white;
+    padding: 20px 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-nav.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.hypelink-wrap i {
+    position: relative;
+    top: 2px;
+}
+
+.banner-container {
+    margin: 20px auto 0px auto;
+    width: 1165px;
+    display: flex;
+    flex-direction: row;
+}
+
+.mySwiperOne {
+    width: 830px;
+    height: 470px;
+    margin: 20px 0;
+}
+
+.mySwiperTwo {
+    width: 24.9%;
+    height: 470px;
+    margin: 20px 0;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    background-color: #38383879 !important; /* رنگ نقاط به قرمز */
+    opacity: 1 !important; /* حذف شفافیت */
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #ff0a0ae0 !important; /* رنگ نقطه فعال به سبز */
+}
+
+
+.features-contrainer {
+    margin: 10px auto;
+    display: flex;
+    background-color: white;
+    width: 1127px;
+    justify-content: space-evenly;
+    border-radius: 14px;
+    align-items: center;
+    gap: 20px;
+    border: solid 2px #cecece9d;
+}
+
+.features-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-weight: 600;
+}
+.features-text {
+    font-size: 15px;
+}
+
+.features-text a {
+    font-size: 13px;
+    position: relative;
+    top: 10px;
+
+}
+
+.features-text p {
+    color: var(--light-text-color);
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.vertical-line2 {
+    width: 1px;       
+    height: 40px;      
+    background-color: #a0a0a0;
+    
+}
+
+.category-container {
+    margin: 27px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+}
+.category-img {
+    border-radius: 10px;
+    width: 365px;
+    height: 100px;
+}
+
+.product-title {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 39px;
+}
+.product-more a {
+    font-size: 14px;
+    color: #891DE8;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.icon2 {
+    transition: transform 0.3s ease, fill 0.2s ease;
+    margin-right: 3px; /* فاصله بین آیکون و متن */
+}
+
+.product-more a:hover {
+    color: #0088cc;
+}
+
+.product-more a:hover .icon2 {
+    transform: translateX(-10px); /* حرکت به سمت چپ */
+    fill: #0088cc;
+}
+
+.product-more svg {
+    position: relative;
+    top: 2px;
+}
+
+.product-title a {
+    padding-bottom: 10px;
+}
+
+#line-bottum {
+    font-size: 15px;
+    border-bottom: 2px solid var(--accent-color);
+}
+#swiper {
+    margin-top: 35px;
+    width: 1100px;
+    height: 310px;  
+}
+
+.swiper-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 15px;
+    height: 300px;
+    overflow: hidden; /* این باعث می‌شود که محتوای اضافی از بیرون نمایش داده نشود */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+#swiper-img {
+    display: block;
+    width: 85%;
+    height: 62%;
+    margin: 5px auto -15px auto;
+    object-fit: contain;
+    transition: opacity 0.3s ease; /* انتقال شفافیت */
+
+  }
+
+
+  .swiper-slide h5 {
+    padding: 0px 20px;
+    font-size: 13px;
+    height: 50px;
+    color: var(--light-text-color);
+    font-weight: 500;
+
+  }
+
+
+  h5:hover .tooltip {
+    display: block;
+    opacity: 1;
+  }
+
+  .price-product {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 1px;
+    bottom: 65px;
+}
+  .price-product h6 {
+    font-size: 13px;
+    position: relative;
+    transition: opacity 0.1s ease; /* انتقال شفافیت */
+
+}
+
+.price-product2 h6:nth-child(2) {
+    position: relative;
+    bottom: 33px;
+    font-size: 13px;
+    font-weight: 500;
+    right: 14px;
+    color: #797979;
+    text-decoration: line-through;
+}
+.icon {
+    position: relative;
+    display: inline-block !important;
+}
+
+.tooltip {
+    position: absolute;
+    top: 50%;
+    left: 160%;
+    transform: translateY(-50%);
+    background-color: #000; /* رنگ پس‌زمینه بالون باکس */
+    color: #fff; /* رنگ متن */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.icon:hover .tooltip {
+    opacity: 1;
+    transform: translateY(-50%) translateX(5px); /* جابجایی کوچک هنگام نمایش */
+}
+
+.icons-container {
+    position: absolute;
+    top: 50%;
+    left: 0; /* چسباندن به سمت چپ */
+    margin-left:-40px;
+    transform: translate(0, -50%); /* مرکز کردن عمودی و چسباندن به سمت چپ */
+    margin-top: -5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* فاصله بین آیکون‌ها */
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    z-index: 20; /* اطمینان از اینکه آیکون‌ها روی دیگر عناصر قرار گیرند */
+    background-color: #F0F0F0;
+    padding: 10px 7px;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.icons-container svg {
+    width: 21px;
+    height: 21px;
+    fill: #636363; /* رنگ آیکون */
+    cursor: pointer;
+    transition: transform 0.3s ease ,fill 0.1s ease; /* افکت تغییر موقعیت هنگام هاور */
+}
+.icons-container svg:hover {
+    fill: #a5a5a5;
+}
+
+/* زمانی که هاور می‌کنید، آیکون‌ها ظاهر شوند */
+#swiper-slide2:hover .icons-container {
+    margin-top: -20px;
+    margin-left: 15px;
+    opacity: 1;
+    transform: translate(-50%, -40%); /* جابجایی آیکون‌ها کمی بالا */
+}
+
+
+  #pagination2 {
+   margin-bottom: -10px;
+  }
+
+  .discount-badge {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    background-color: #323BEA;
+    color: white;
+    padding: 0px 10px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 1000;
+}
+
+#swiper-slide2 {
+    height: 285px !important;
+}
+#swiper-slide2:hover #swiper-img,
+#swiper-slide2:hover h5,
+#swiper-slide2:hover .price-product h6 {
+    opacity: 0.2; /* کاهش شفافیت برای کم‌رنگ کردن */
+}
+
+.ad-banner {
+    margin: 35px auto;
+    width: 1095px;
+    height: 70px;
+    border-radius: 15px;
+    background-image: url(./side-banner.png);
+    box-shadow: 10px 2px 13px -12px rgba(191,191,191,1);
+}
+
+.social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px; /* فاصله بین آیکون‌ها */
+    z-index: 100000;
+  }
+  
+  .telegram-icon, .instagram-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+    position: relative;
+    bottom: 10px;
+  }
+  
+  /* Telegram styles */
+  .telegram-icon {
+    background-color: #0088cc; /* Telegram blue */
+  }
+  .telegram-icon:hover {
+    transform: rotate(360deg);
+  }
+  .telegram-icon svg {
+    width: 27px;
+    height: 27px;
+    position: relative;
+    right: 3px;
+  }
+  
+  /* Instagram styles */
+  .instagram-icon {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .instagram-icon img {
+    width: 27px;
+    height: 27px;
+    filter: invert(100%); /* تبدیل آیکون مشکی به سفید */
+  }
+  
+  .instagram-icon:hover {
+    transform: rotate(-360deg);
+  }
+     /* تغییر موقعیت ابزارک Goftino */
+     #goftino_w {
+        right: unset !important; /* حذف موقعیت پیش‌فرض راست */
+        left: 10px !important;   /* تعیین موقعیت جدید در سمت چپ */
+        bottom: 20px !important; /* فاصله از پایین صفحه */
+        
+    }
+
+#comment-title {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.article-container {
+    background-color: white;
+    width: 337px;
+    height: 235px; /* تنظیم ارتفاع به صورت خودکار */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    position: relative; /* مرجع برای position:absolute */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.article-container:hover {
+    transform: translateY(-10px); /* حرکت به سمت بالا */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* اضافه کردن سایه برای زیبایی */
+}
+
+.new-tag {
+    margin: 0px 1px 0 0;
+    position: absolute;
+    top: 10px;
+    right: 10px; /* قرار دادن تگ در سمت راست */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.459);
+    color: white;
+    font-size: 12px;
+    width: 50px;
+    height: 30px;
+    line-height: 30px; /* تراز کردن متن وسط */
+    border-radius: 10px;
+}
+
+.article-image {
+    width: 100%;
+    height: 140px;
+}
+
+.article-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.article-info {
+    padding: 15px;
+}
+
+.article-title {
+    text-align: right;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.article-title a {
+    text-decoration: none;
+    color: #333;
+}
+
+.article-tags {
+    display: flex;
+    left: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    justify-content: right;
+}
+
+.article-tags span {
+    background-color: #f0f0f0;
+    color: #555;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+.article-mother {
+    margin: 40px auto 70px auto;
+    display: flex;
+    gap: 35px;
+
+}
+/* استایل کلی فوتر */
+.footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 15px;
+    text-align: right;
+}
+
+/* کانتینر اصلی */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1030px;
+    margin: 0 auto;
+
+}
+
+/* ستون‌های فوتر */
+.footer-column {
+    flex: 1 30% 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* استایل لوگو */
+.footer-logo img {
+    width: 200px;
+    height: auto;
+}
+
+/* توضیحات */
+.footer-description {
+    position: relative;
+    left: 50%;
+    width: 355px;
+    font-size: 13px;
+    line-height: 2;
+    color: #828282;
+    transform: translateX(-50%);
+}
+
+/* عنوان ستون‌ها */
+.footer-title {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* لینک‌ها */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.footer-links li a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+    color: #b40e0e;
+}
+
+/* نمادها */
+.footer-icons img {
+    position: relative;
+    left: 12px;
+    width: 70px;
+    height: auto;
+
+}
+
+
+/* کپی‌رایت */
+.footer-copyright {
+    padding: 0px 100px;
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
+    margin-top: 25px;
+}
+.footer-copyright a {
+    font-size: 13px;
+    color: #737373;
+}

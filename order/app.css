@@ -1,0 +1,247 @@
+@font-face {
+	font-family: 'IranSans';
+	src: url('../assets/IranSans.ttf') format('truetype');
+}
+:root{
+    --bg-color: #ffffff;
+    --text-color :#4b515a;
+}
+
+* {
+    font-family: 'IranSans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+body {
+    position: relative;
+    font-family: 'IranSans', sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_content {
+    justify-self: center;
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+
+}
+header {
+    padding: 20px 13%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 40px;
+    background-color: var(--bg-color);
+}
+
+header img {
+    width: 47px;
+    height: 53px;
+}
+
+.nav_content {
+    display: flex;
+    gap: 40px;
+    font-size: 15px;
+}
+
+.nav_content a {
+    color: var(--text-color);
+}
+
+.mobile_menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* منو کاملاً خارج از صفحه باشد */
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease-in-out;
+    z-index: 500;
+    
+}
+.mobile_menu.show {
+    right: 0;
+}
+.right_section {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+.mobile_menu a {
+    padding: 15px;
+    font-size: 18px;
+    color: var(--text-color);
+    border-bottom: 1px solid #ddd;
+    width: 80%;
+    text-align: center;
+}
+
+/* دکمه بستن */
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: #4b515a;
+    font-weight: 200;
+}
+
+.nav_req {
+    border-radius: 14px;
+    padding: 13px 30px;
+    border: 1px solid #bebebe;
+    font-weight: 300;
+    color: #4b515a;
+    font-size: 15px;
+    margin-right: 50px;
+}
+h2 {
+    text-align: center;
+    color: #4b515a;
+    width: 800px;
+    margin-top: 150px;
+}
+.social_container {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.social_item:nth-child(1) {
+    background-color: #4858e7;
+}
+.social_item {
+    border-radius: 14px;
+    color: white;
+    justify-content: space-between;
+    width: 200px;
+    padding: 15px 30px;
+    background-color: #4b515a;
+    display: flex;
+    align-items: center;
+}
+.social_item i {
+    font-size: 24px;
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 20px 5%;
+        position: relative;
+    }
+
+    .nav_content {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    section {
+        flex-direction: column-reverse; /* تصویر بره پایین */
+        text-align: center; /* وسط‌چین شدن متن */
+        padding: 50px 20px;
+    }
+
+    .right_section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    h2 {
+        margin-top: 70px;
+        font-size: 30px;
+        width: auto;
+    }
+
+    .texts p {
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    .texts a {
+        display: inline-block;
+        padding: 12px 25px;
+    }
+
+    .checked_container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    section img {
+        width: 80%; /* تنظیم سایز تصویر */
+        max-width: 350px;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 600px) {
+    h2 {
+        padding: 0px 30px;
+        margin-top: 60px;
+        font-size: 23px;
+    }
+
+    .texts a {
+        padding: 10px 20px;
+    }
+
+    .checked_container .checked_item {
+        font-size: 12px;
+    }
+
+    section img {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav_req {
+        display: none;
+    }
+    .nav_req_mobile {
+        display: block;
+    }
+    .social_container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .social_item {
+        width: 80%;
+    }
+}
+@media (max-width: 1550px) {
+    .images img {
+        display: none;
+    }
+    .items_content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

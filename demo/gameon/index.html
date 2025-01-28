@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گیم آن | فروشگاه قطعات کامپیوتر</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="icon" href="/client/style/icon1.png">
+</head>
+
+<body>
+    <div id="promo-bar">
+        <span class="promo-text">تخفیفات بلک فرایدی رو از دست نده</span>
+        
+        <a href="#" class="view-btn">مشاهده</a>
+        <button class="close-btn" onclick="closePromoBar()">×</button>
+    </div>
+    <div class="overlay2"></div>
+    <div class="social-icons">
+        <!-- Telegram Icon -->
+        <div class="telegram-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+            <path d="M41.4193 7.30899C41.4193 7.30899 45.3046 5.79399 44.9808 9.47328C44.8729 10.9883 43.9016 16.2908 43.1461 22.0262L40.5559 39.0159C40.5559 39.0159 40.3401 41.5048 38.3974 41.9377C36.4547 42.3705 33.5408 40.4227 33.0011 39.9898C32.5694 39.6652 24.9068 34.7955 22.2086 32.4148C21.4531 31.7655 20.5897 30.4669 22.3165 28.9519L33.6487 18.1305C34.9438 16.8319 36.2389 13.8019 30.8426 17.4812L15.7331 27.7616C15.7331 27.7616 14.0063 28.8437 10.7686 27.8698L3.75342 25.7055C3.75342 25.7055 1.16321 24.0823 5.58815 22.459C16.3807 17.3729 29.6555 12.1786 41.4193 7.30899Z" fill="#fff"/>
+          </svg>
+        </div>
+      
+        <!-- Instagram Icon -->
+        <div class="instagram-icon">
+          <img data-src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/black-instagram-icon.png" alt="Instagram">
+        </div>
+      </div>
+      
+      
+    <div class="top-nav">
+        <div class="auth">
+            <div class="login">
+                <a href="panel/auth.html?mode=login" >ورود</a>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#16de0b"><path d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z"/></svg>
+            </div>
+            <a class="space">|</a>
+            <div class="signup">
+                <a href="panel/auth.html?mode=signup">ثبت نام</a>
+            </div>
+        </div>
+        <div class="top-nav-right">
+            <a href="#">تخفیفات</a>
+            <a href="#">مقررات</a>
+            <a href="#">ارتباط با ما</a>
+            <a href="#">وبلاگ</a>
+            <a href="#">پشتیبانی</a>
+        </div>
+    </div>
+    
+    <div class="mid-nav">
+        <div class="top-mid-nav">
+            <div class="add-to-cart">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#7d7d7d">
+                    <path d="M286.15-97.69q-29.15 0-49.57-20.43-20.42-20.42-20.42-49.57 0-29.16 20.42-49.58 20.42-20.42 49.57-20.42 29.16 0 49.58 20.42 20.42 20.42 20.42 49.58 0 29.15-20.42 49.57-20.42 20.43-49.58 20.43Zm387.7 0q-29.16 0-49.58-20.43-20.42-20.42-20.42-49.57 0-29.16 20.42-49.58 20.42-20.42 49.58-20.42 29.15 0 49.57 20.42t20.42 49.58q0 29.15-20.42 49.57Q703-97.69 673.85-97.69ZM240.61-730 342-517.69h272.69q3.46 0 6.16-1.73 2.69-1.73 4.61-4.81l107.31-195q2.31-4.23.38-7.5-1.92-3.27-6.54-3.27h-486Zm-28.76-60h555.38q24.54 0 37.11 20.89 12.58 20.88 1.2 42.65L677.38-494.31q-9.84 17.31-26.03 26.96-16.2 9.66-35.5 9.66H324l-46.31 84.61q-3.08 4.62-.19 10 2.88 5.39 8.65 5.39h457.69v60H286.15q-40 0-60.11-34.5-20.12-34.5-1.42-68.89l57.07-102.61L136.16-810H60v-60h113.85l38 80ZM342-517.69h280-280Z"></path>
+                </svg>
+                <div class="cart-text">سبد خرید</div>
+                <div class="cart-items">
+                    <a>1</a>
+                </div>
+            </div>
+            
+            
+            <div class="vertical-line"></div>
+
+            <div class="search-bar">
+                <span class="search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8d8d8d">
+                        <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                    </svg>
+                    <svg id="talking-mic" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8d8d8d">
+                        <path d="M480-400q-50 0-85-35t-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35Zm0-240Zm-40 520v-123q-104-14-172-93t-68-184h80q0 83 58.5 141.5T480-320q83 0 141.5-58.5T680-520h80q0 105-68 184t-172 93v123h-80Zm40-360q17 0 28.5-11.5T520-520v-240q0-17-11.5-28.5T480-800q-17 0-28.5 11.5T440-760v240q0 17 11.5 28.5T480-480Z"/>
+                    </svg>
+                </span>
+                <input id="search-input" type="text" placeholder="... جستجو در محصولات" />
+            </div>
+            <div class="logo">
+                <img data-src="style/logo.png" alt="" draggable="false"  >
+            </div>
+            
+        </div>
+        <hr class="horizontal-line">
+        <div class="bottum-mid-nav" id="main-nav">
+            <div class="phone-number">
+                <img data-src="style/phone.png" alt="" draggable="false" >
+                <a id="phone-number">0911 345 7890</a>
+            </div>
+            <div class="bottum-mid-nav-right">
+                <div class="hypelink-wrap dropdown">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <a href="#">سرویس و خدمات</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a href="#">خدمات ولورانت</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">سرویس های ما</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hypelink-wrap dropdown">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <a href="#">لوازم کنسول بازی</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a href="#">کنترلر بازی</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">دستگاه تریگر</a>
+                        </li>
+                        <li>
+                            <a href="#">لوازم جانبی کنسول</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hypelink-wrap dropdown">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <a href="">لوازم جانبی موبایل</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a href="#">شارژر موبایل</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">قاب و کاور موبایل</a>
+                        </li>
+                        <li>
+                            <a href="#">گلس موبایل</a>
+                        </li>
+                        <li>
+                            <a href="#">لوازم متفرقه</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hypelink-wrap dropdown">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <a href="">قطعات کامپیوتر</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a href="#">پردازنده</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">مادربرد</a>
+                        </li>
+                        <li>
+                            <a class="auto-dir" href="#">هارد و SSD</a>
+                        </li>
+                        <li>
+                            <a href="#">کارت گرافیک</a>
+                        </li>
+                        <li>
+                            <a href="#">منبع تغذیه</a>
+                        </li>
+                        <li>
+                            <a href="#">رم و رم لپ تاپ</a>
+                        </li>
+                        <li>
+                            <a href="#">خنک کننده پردازنده</a>
+                        </li>
+                        <li>
+                            <a href="#">فن کیس</a>
+                        </li>
+                        <li>
+                            <a href="#">کیس کامپیوتر</a>
+                        </li>
+                        <li>
+                            <a href="#">ماوس گیمینگ</a>
+                        </li>
+                        <li>
+                            <a href="#">کیبورد گیمینگ</a>
+                        </li>
+                        <li>
+                            <a href="#">مانیتور</a>
+                        </li>
+                        <li>
+                            <a href="#">ماوس پد</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottum-mid-nav scroll-nav" id="scroll-nav">
+        <div class="phone-number">
+            <img data-src="style/phone.png" alt="" draggable="false" >
+            <a id="phone-number">0911 345 7890</a>
+        </div>
+        <div class="bottum-mid-nav-right">
+            <div class="hypelink-wrap dropdown">
+                <i class="fa-solid fa-angle-down"></i>
+                <a href="#">سرویس و خدمات</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a href="#">خدمات ولورانت</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">سرویس های ما</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hypelink-wrap dropdown">
+                <i class="fa-solid fa-angle-down"></i>
+                <a href="#">لوازم کنسول بازی</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a href="#">کنترلر بازی</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">دستگاه تریگر</a>
+                    </li>
+                    <li>
+                        <a href="#">لوازم جانبی کنسول</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hypelink-wrap dropdown">
+                <i class="fa-solid fa-angle-down"></i>
+                <a href="">لوازم جانبی موبایل</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a href="#">شارژر موبایل</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">قاب و کاور موبایل</a>
+                    </li>
+                    <li>
+                        <a href="#">گلس موبایل</a>
+                    </li>
+                    <li>
+                        <a href="#">لوازم متفرقه</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hypelink-wrap dropdown">
+                <i class="fa-solid fa-angle-down"></i>
+                <a href="">قطعات کامپیوتر</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a href="#">پردازنده</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">مادربرد</a>
+                    </li>
+                    <li>
+                        <a class="auto-dir" href="#">هارد و SSD</a>
+                    </li>
+                    <li>
+                        <a href="#">کارت گرافیک</a>
+                    </li>
+                    <li>
+                        <a href="#">منبع تغذیه</a>
+                    </li>
+                    <li>
+                        <a href="#">رم و رم لپ تاپ</a>
+                    </li>
+                    <li>
+                        <a href="#">خنک کننده پردازنده</a>
+                    </li>
+                    <li>
+                        <a href="#">فن کیس</a>
+                    </li>
+                    <li>
+                        <a href="#">کیس کامپیوتر</a>
+                    </li>
+                    <li>
+                        <a href="#">ماوس گیمینگ</a>
+                    </li>
+                    <li>
+                        <a href="#">کیبورد گیمینگ</a>
+                    </li>
+                    <li>
+                        <a href="#">مانیتور</a>
+                    </li>
+                    <li>
+                        <a href="#">ماوس پد</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="banner-container">
+        <div class="swiper mySwiperTwo">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img data-src="style/minibanner1.png" alt="Slide 1" loading="lazy">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper mySwiperOne">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img data-src="style/banner1.png" alt="Slide 1" loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                    <img data-src="style/banner2.png" alt="Slide 2" loading="lazy">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="features-contrainer">
+        <div class="features-wrapper">
+            <div class="features-text">
+                <a>ارسال به سراسر کشور</a>
+                <p>ارسال رایگان به سراسر کشور بدون هزینه</p>
+            </div>
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 21C16.8954 21 16 20.1046 16 19C16 17.8954 16.8954 17 18 17C19.1046 17 20 17.8954 20 19C20 20.1046 19.1046 21 18 21Z" stroke="#ff0a0a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 21C5.89543 21 5 20.1046 5 19C5 17.8954 5.89543 17 7 17C8.10457 17 9 17.8954 9 19C9 20.1046 8.10457 21 7 21Z" stroke="#ff0a0a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 18H9" stroke="#ff0a0a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.75 18C15.75 18.4142 15.4142 18.75 15 18.75C14.5858 18.75 14.25 18.4142 14.25 18H15.75ZM2.75 5C2.75 5.41421 2.41421 5.75 2 5.75C1.58579 5.75 1.25 5.41421 1.25 5H2.75ZM14.25 18V7H15.75V18H14.25ZM11 3.75H3V2.25H11V3.75ZM2.75 4V5H1.25V4H2.75ZM3 3.75C2.86193 3.75 2.75 3.86193 2.75 4H1.25C1.25 3.0335 2.0335 2.25 3 2.25V3.75ZM14.25 7C14.25 5.20507 12.7949 3.75 11 3.75V2.25C13.6234 2.25 15.75 4.37665 15.75 7H14.25Z" fill="#ff0a0a  "/>
+                <path d="M9 8.25C9.41421 8.25 9.75 8.58579 9.75 9C9.75 9.41421 9.41421 9.75 9 9.75V8.25ZM1 9.75C0.585787 9.75 0.25 9.41421 0.25 9C0.25 8.58579 0.585787 8.25 1 8.25V9.75ZM9 9.75H1V8.25H9V9.75Z" fill="#ff0a0a"/>
+                <path d="M9 11.25C9.41421 11.25 9.75 11.5858 9.75 12C9.75 12.4142 9.41421 12.75 9 12.75V11.25ZM4 12.75C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25V12.75ZM9 12.75H4V11.25H9V12.75Z" fill="#ff0a0a"/>
+                <path d="M20 11.25C20.4142 11.25 20.75 11.5858 20.75 12C20.75 12.4142 20.4142 12.75 20 12.75V11.25ZM15 12.75C14.5858 12.75 14.25 12.4142 14.25 12C14.25 11.5858 14.5858 11.25 15 11.25V12.75ZM20 12.75H15V11.25H20V12.75Z" fill="#ff0a0a"/>
+                <path d="M2 16V17C2 17.5523 2.44772 18 3 18H5" stroke="#ff0a0a" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M15 8L17.7112 8C18.0084 7.99991 18.2997 8.08603 18.5526 8.24873C18.8054 8.41142 19.0097 8.64425 19.1427 8.92111L20 12L21.9743 12.6581C22.5869 12.8623 23 13.4355 23 14.0811V16.5C23 17.3284 22.3284 18 21.5 18H20" stroke="#ff0a0a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+        </div>
+        <div class="vertical-line2"></div>
+
+        <div class="features-wrapper">
+            <div class="features-text">
+                <a>پشتیبانی 24 ساعته</a>
+                <p>میتونید پشتیبانی 24 ساعته داشته باشید</p>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" height="39px" viewBox="0 -960 960 960" width="39px" fill="#ff0a0a"><path d="M481.33-48.67V-112h289.34v-50h-148v-296h148v-60q0-120.01-84.7-206.34-84.69-86.33-204.75-86.33-120.05 0-205.97 86.33T189.33-518v60h148v296h-148q-25.62 0-44.48-18.85Q126-199.71 126-225.33v-292.44q0-73.55 27.97-138.43 27.97-64.88 76.27-113.26 48.3-48.37 113.2-76.45Q408.34-874 481.6-874q73.15 0 137.43 28.1 64.27 28.1 112.07 76.49 47.8 48.39 75.35 113.24Q834-591.32 834-518.14V-112q0 25.63-18.85 44.48-18.86 18.85-44.48 18.85H481.33Zm-292-176.66H274v-169.34h-84.67v169.34Zm496.67 0h84.67v-169.34H686v169.34ZM189.33-394.67H274h-84.67Zm496.67 0h84.67H686Z"/></svg>
+
+            <div class="vertical-line2"></div>
+
+        <div class="features-wrapper">
+            <div class="features-text">
+                <a>! تخفیفات هفتگی </a>
+                <p>میتونید تخفیف ها رو هر هفته چک کنید</p>
+            </div>
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="#ff0a0a" d="M896 324.096c0-42.368-2.496-55.296-9.536-68.48a52.352 52.352 0 0 0-22.144-22.08c-13.12-7.04-26.048-9.536-68.416-9.536H228.096c-42.368 0-55.296 2.496-68.48 9.536a52.352 52.352 0 0 0-22.08 22.144c-7.04 13.12-9.536 26.048-9.536 68.416v375.808c0 42.368 2.496 55.296 9.536 68.48a52.352 52.352 0 0 0 22.144 22.08c13.12 7.04 26.048 9.536 68.416 9.536h567.808c42.368 0 55.296-2.496 68.48-9.536a52.352 52.352 0 0 0 22.08-22.144c7.04-13.12 9.536-26.048 9.536-68.416V324.096zm64 0v375.808c0 57.088-5.952 77.76-17.088 98.56-11.136 20.928-27.52 37.312-48.384 48.448-20.864 11.136-41.6 17.088-98.56 17.088H228.032c-57.088 0-77.76-5.952-98.56-17.088a116.288 116.288 0 0 1-48.448-48.384c-11.136-20.864-17.088-41.6-17.088-98.56V324.032c0-57.088 5.952-77.76 17.088-98.56 11.136-20.928 27.52-37.312 48.384-48.448 20.864-11.136 41.6-17.088 98.56-17.088H795.84c57.088 0 77.76 5.952 98.56 17.088 20.928 11.136 37.312 27.52 48.448 48.384 11.136 20.864 17.088 41.6 17.088 98.56z"/><path fill="#ff0a0a" d="M64 320h896v64H64v-64zm0 128h896v64H64v-64zm128 192h256v64H192z"/></svg>    
+        </div>
+    </div>
+    </div>
+        <div class="category-container">
+            <a href="#">
+                <img data-src="style/category1.png" class="category-img" alt="" loading="lazy">
+            </a>
+            <a href="#">
+                <img data-src="style/category2.png" class="category-img" alt="" loading="lazy">
+            </a>
+            <a href="#">
+                <img data-src="style/category3.png" class="category-img" alt="" loading="lazy">
+            </a>
+        </div>
+    
+    <div class="product-title">
+        <div class="product-more">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon2" height="24px" viewBox="0 -960 960 960" width="24px" fill="#891DE8"><path d="M400-240 160-480l240-240 56 58-142 142h486v80H314l142 142-56 58Z"/></svg>
+                مشاهده بیشتر
+            </a>
+        </div>
+        <a id="line-bottum" >محصولات تخفیف دار</a>
+    </div>
+    
+<div class="swiper mySwiper" id="swiper" >
+    <div class="swiper-wrapper">
+        
+        <a href="#" class="swiper-slide" id="swiper-slide2">
+            <div class="discount-badge">20%</div>
+            <img id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/baa16fe27326c646a4d7328e9b2378f1b9d27750_1691405578.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt="viper mini" loading="lazy">
+            <h5 class="auto-dir">کارت گرافیک RTX™ 4060 OC Edition 8GB GDDR6</h5>
+            <div class="price-product">
+                <h6><p>تومان&nbsp;</p></h6>
+                <div class="price-product2">
+                    <h6>۲۰,۳۰۰,۰۰۰</h6>
+                    <h6>25,240,000</h6>
+                </div>
+            </div>
+        </a>
+        
+        
+        
+        <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+            <div class="discount-badge">15%</div>
+            <img  id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/03018319b4d32d61ccafc724002134c660b8f31d_1652876844.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+            <h5 class="auto-dir" href="#">پردازنده اینتل مدل Core i5-13400 Tray</h5>
+            <div class="price-product">
+                <h6 href="#"><p>تومان&nbsp;</p></h6>
+                <div class="price-product2">
+                    <h6>۱۱,۴۳۴,000</h6>
+                    <h6>13,240,000</h6>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+            <div class="discount-badge">20%</div>
+            <img  id="swiper-img" data-src="https://cdn.idealo.com/folder/Product/204947/1/204947132/s1_produktbild_gross_3/asus-rog-strix-z890-e-gaming-wifi.jpg" alt=""loading="lazy">
+            <h5 class="auto-dir" href="#">مادربرد ایسوس مدل ROG STRIX Z890-E GAMING WIFI</h5>
+            <div class="price-product">
+                <h6 href="#"><p>تومان&nbsp;</p></h6>
+                <div class="price-product2">
+                    <h6>۳۷,۰۰۰,۰۰۰</h6>
+                    <h6>46,240,000</h6>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+            <div class="discount-badge">20%</div>
+            <img  id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/c227126cebe925ec6654a5bf35e609688744f394_1697365966.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+            <h5 class="auto-dir" href="#">منبع تغذیه مدل Prime 850W</h5>
+            <div class="price-product">
+                <h6 href="#"><p>تومان&nbsp;</p></h6>
+                <div class="price-product2">
+                    <h6>۸,۴۹۰,۰۰۰</h6>
+                    <h6>10,240,000</h6>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+            <div  class="discount-badge">20%</div>
+            <img  id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/44da4cf34166eeb4565917cf42ef58497cf9137e_1731408326.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+            <h5 class="auto-dir" href="#">رم کامپیوتر DDR5 دو کاناله 6000 مگاهرتز CL40 کینگستون مدل FURY Beast RGB ظرفیت 64 گیگابایت</h5>
+            <div class="price-product">
+                <h6 href="#"><p>تومان&nbsp;</p></h6>
+                <div class="price-product2">
+                    <h6>۱۶,۹۰۰,۰۰۰</h6>
+                    <h6>19,240,000</h6>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+            <div class="discount-badge">20%</div>
+            <img  id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/3971378b3cc2a957e461796cd1d908a96f32a4e5_1700904544.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+            <h5 class="auto-dir" href="#"> خنک کننده آبی دیپ کول مدل LE720</h5>
+            <div class="price-product">
+                <h6 href="#"><p>تومان&nbsp;</p></h6>
+                <div class="price-product2">
+                    <h6>۴,۲۷۳,۰۰۰</h6>
+                    <h6>5,540,000</h6>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+            <div class="discount-badge">20%</div>
+            <img  id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/184bc65c2b3f45d113a4283cd341567cac9a4fc5_1670674904.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+            <h5 class="auto-dir" href="#">کیس کامپیوتر تسکو مدل GC 4492</h5>
+            <div class="price-product">
+                <h6 href="#"><p>تومان&nbsp;</p></h6>
+                <div class="price-product2">
+                    <h6>۴,۳۷۰,۰۰۰</h6>
+                    <h6>5,240,000</h6>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+            <div class="discount-badge">20%</div>
+            <img  id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/4a1fa0283634cf0071e6a979c7a28ada8a099cfa_1684929022.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+            <h5 class="auto-dir" href="#">فن کیس تسکو مدل G FAN 330</h5>
+            <div class="price-product">
+                <h6 href="#"><p>تومان&nbsp;</p></h6>
+                <div class="price-product2">
+                    <h6>۱,۵۹۸,۰۰۰</h6>
+                    <h6>2,240,000</h6>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div id="pagination2" class="swiper-pagination"></div>
+  </div>
+
+
+  <div class="product-title">
+    <div class="product-more">
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon2" height="24px" viewBox="0 -960 960 960" width="24px" fill="#891DE8"><path d="M400-240 160-480l240-240 56 58-142 142h486v80H314l142 142-56 58Z"/></svg>
+            مشاهده بیشتر
+        </a>
+    </div>
+    <a id="line-bottum" >ماوس های  گیمینگ</a>
+</div>
+
+<div class="swiper mySwiper" id="swiper" >
+<div class="swiper-wrapper">
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img  id="swiper-img" data-src="https://media2.nbb-cdn.de/images/products/originals/GProLOL1_0032.jpg?size=1200" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">ماوس لاجیتک مدل G PRO GAMING RGB</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>3,570,000</h6>
+        </div>
+    </a>
+    
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img  id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/c3ae922b3b4e459c59e917e11d089104bdb30bef_1717321853.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">ماوس  مدل TUF GAMING M3 GEN II</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۲,۲۹۰,۰۰۰</h6>
+        </div>
+    </a>
+
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img  id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/54ce72f435b4bf42603cdab6e1aa9d0ce685ccba_1652705216.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">ماوس   لاجیتک مدل G502 LIGHTSPEED</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۶,۳۵۰,۰۰۰</h6>
+        </div>
+    </a>
+
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img  id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/119560078.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">ماوس  مخصوص بازی ریزر  Viper Ultimate</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۷,۶۲۶,000</h6>
+        </div>
+    </a>
+
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img  id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/ac2fb684f644850e55d5dffd9d8367e454b61a10_1727891464.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">ماوس گیمینگ گلوریس مدل O Minus</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۵,۰۰۰,۰۰۰</h6>
+        </div>
+    </a>
+
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img  id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/ef79189c4d182a16c19a2b2a5737b8e8e613d83e_1620647961.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">ماوس گیمینگ کورسیر مدل NightSword</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۳,۴۵۰,۰۰۰</h6>
+        </div>
+    </a>
+
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img  id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/21eeca7d276bb5812b3e4a4051babdea319f9530_1729067015.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">ماوس بی سیم گیمینگ ادیفایر مدل G3M PRO</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۴,۰۰۰,۰۰۰</h6>
+        </div>
+    </a>
+
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img  id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/56621750ed9f537a46b9e2781050efe3148d425e_1651749570.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">ماوس استیل سریز مدل Rival 3 RGB</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۲,۹۷۰,۰۰۰</h6>
+        </div>
+    </a>
+</div>
+<div id="pagination2" class="swiper-pagination"></div>
+</div>
+
+
+
+<div class="product-title">
+    <div class="product-more">
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon2" height="24px" viewBox="0 -960 960 960" width="24px" fill="#891DE8"><path d="M400-240 160-480l240-240 56 58-142 142h486v80H314l142 142-56 58Z"/></svg>
+            مشاهده بیشتر
+        </a>
+    </div>
+    <a id="line-bottum" >کیبورد  های گیمینگ</a>
+</div>
+
+<div class="swiper mySwiper" id="swiper">
+<div class="swiper-wrapper">
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/7b84c6a623336bf1ced5896668f6efc8c5173326_1722930727.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" >کیبورد ردراگون مدل K552 RGB، سوییچ مکانیکال آبی، Tenkeyless، نورپردازی RGB</h5>
+        <div class="price-product">
+            <h6><p>تومان&nbsp;</p></h6>
+            <h6>3,570,000</h6>
+        </div>
+    </a>
+     
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/f37c42b5cd072161c7ac95c863450943f8a48f65_1723385709.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">کیبورد گیمینگ ریزر مدل Huntsman V2، سوییچ مکانیکال Linear Optical قرمز، Full-Size، نورپردازی RGB</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۱۷,۵۰۰,۰۰۰</h6>
+        </div>
+    </a>
+
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/8d930e4214ac2fbb5d2ca286dccf1f8ae7dbb9e7_1729272314.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">کیبورد گیمینگ پرودو مدل pdx222</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۱,۷۸۰,۰۰۰</h6>
+        </div>
+    </a>
+
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/db02a9420a322ce6761fb9d3947d3f76914e643e_1731150366.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">کیبورد گیمینگ هویت مدل kb-878l</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۸۴۵,000</h6>
+        </div>
+    </a>
+
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/94d1e48d2ce5ba9cd6e1dfcba5a1a89c6f1e096f_1632123315.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">کیبورد  بازی هایپرایکس مدل HyperX Alloy Elite 2 Mechanical Gaming Keyboard</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۱۰,۱۸۴,000</h6>
+        </div>
+    </a>
+
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/2604113.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">کیبورد مخصوص بازی ای فورتک مدل B314</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۲,۴۰۰,۰۰۰</h6>
+        </div>
+    </a>
+
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/11e4355049b67a3fc68706fdf3c255c9f0d6f12c_1693880411.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">کیبورد مخصوص بازی نوفی مدل Air75</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۱۷,۵۰۰,۰۰۰</h6>
+        </div>
+    </a>
+
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/21684a9d86bfa81629da8aa6f8d9048f24fc6850_1684052754.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">کیبورد مخصوص بازی ریزر مدل Huntsman Mini - Analog Optical Switches</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۸,۲۰۰,۰۰۰</h6>
+        </div>
+    </a>
+</div>
+<div id="pagination2" class="swiper-pagination"></div>
+</div>
+
+
+<div class="product-title">
+    <div class="product-more">
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#891DE8" class="icon2">
+                <path d="M400-240 160-480l240-240 56 58-142 142h486v80H314l142 142-56 58Z"/>
+            </svg>
+            مشاهده بیشتر
+        </a>
+    </div>    
+    
+    <a id="line-bottum" >لوازم کنسول بازی</a>
+</div>
+
+<div class="swiper mySwiper" id="swiper">
+<div class="swiper-wrapper">
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/00845e59213bb59ddb870b35c85f32f7ae5afd4f_1605104492.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir">کنسول بازی   XBOX SERIES S  512 گیگابایت</h5>
+        <div class="price-product">
+            <h6><p>تومان&nbsp;</p></h6>
+            <h6>۲۰,۴۹۹,000</h6>
+        </div>
+    </a>
+    
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/66163c2e514391f7e038b8ed76be2a31ea39428b_1724190526.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">کنسول بازی سونی مدل Playstation 4 Slim ریجن 3 کد CUH-2218B ظرفیت 1 ترابایت به همراه کارت نصب 20 عدد بازی</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۲۳,۴۹۹,000</h6>
+        </div>
+    </a>
+
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/7bb00327ed9c6dba0f4b32682dd92045d713a4ce_1610279596.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">کنسول بازی سونی مدل PlayStation 5 ظرفیت 825 گیگابایت ریجن 1200 آسیا به همراه دسته اضافی</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۳۷,۲۰۰,۰۰۰</h6>
+        </div>
+    </a>
+
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/ea7b75d9cb161cb662fa1f70ea764d8525f3bc2f_1718452578.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">کنسول بازی پرتابل مدل Olevo</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۱,۳۷۰,۰۰۰</h6>
+        </div>
+    </a>
+
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/d9a5b4ded1fe4ed354df6e9aa50d48999aaa759b_1684071909.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">کنسول بازی قابل حمل مدل SUP plus 400in1</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۳۹۹,۰۰۰</h6>
+        </div>
+    </a>
+
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/110248372.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">کنسول بازی قابل حمل ساپ گیم باکس مدل Plus 400</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۳۳۰,۰۰۰</h6>
+        </div>
+    </a>
+
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/822357d5072abf0cfd97fbc7cf85604369493737_1712715165.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">کنسول بازی پرتابل مدل Porodo Gaming</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۳,۸۹۰,۰۰۰</h6>
+        </div>
+    </a>
+
+    <a href="https://chatgpt.com/" class="swiper-slide" id="swiper-slide2">
+        <img id="swiper-img" data-src="https://dkstatics-public.digikala.com/digikala-products/bf3da7570c8f10dd8e919ce241196843db9ecd53_1726997638.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt=""loading="lazy">
+        <h5 class="auto-dir" href="#">کنسول بازی گیم باکس اندروید مدل agbox-pro-01-h2</h5>
+        <div class="price-product">
+            <h6 href="#"><p>تومان&nbsp;</p></h6>
+            <h6>۴,۴۴۹,۰۰۰</h6>
+        </div>
+    </a>
+</div>
+<div id="pagination2" class="swiper-pagination"></div>
+</div>
+
+
+<div class="ad-banner"></div>
+<a id="comment-title" >مقاله های جدید</a>
+
+<div class="article-mother">
+    <div class="article-container">
+        <div class="new-tag">جدید</div>
+        <div class="article-image">
+            <img data-src="https://api2.zoomit.ir/media/poco-x6-pro-homescreen-65cd2748381b5915be4f397d?w=1080&q=80" alt="" loading="lazy">
+        </div>
+        <div class="article-info">
+            <div class="article-title">
+                <a href="#">میانگین استفاده گوشی در روز چقدره؟</a>
+            </div>
+            <div class="article-tags">
+                <span>گوشی</span>
+                <span>فناوری</span>
+                <span>موبایل</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="article-container">
+        <div class="new-tag">جدید</div>
+        <div class="article-image">
+            <img data-src="https://api2.zoomit.ir/media/best-smartphones-2024-670a5e75f72bf31577f0fcca?w=384&q=75" alt="" loading="lazy">
+        </div>
+        <div class="article-info">
+            <div class="article-title">
+                <a href="#">بهترین گوشی های سال 1403 + قیمت</a>
+            </div>
+            <div class="article-tags">
+                <span>گوشی</span>
+                <span>فناوری</span>
+                <span>موبایل</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="article-container">
+        <div class="new-tag">جدید</div>
+        <div class="article-image">
+            <img data-src="https://api2.zoomit.ir/media/win-10-logo-65bf6b38ad00028634ae7069?w=1080&q=80" alt="" loading="lazy">
+        </div>
+        <div class="article-info">
+            <div class="article-title">
+                <a href="#">راهنمای نصب ویندوز 10 برای کامپیوتر</a>
+            </div>
+            <div class="article-tags">
+                <span>کامپیوتر</span>
+                <span>فناوری</span>
+                <span>نرم افزار</span>
+            </div>
+        </div>
+    </div>
+</div>
+<img data-src="./style/footer-svg.png" alt="">
+<footer class="footer">
+    <div class="footer-container">
+
+
+        <div class="footer-column">
+            <h3 class="footer-title">نمادهای الکترونیکی</h3>
+            <div class="footer-icons">
+                <img data-src="./style/samandehi.png" alt="نماد ۱">
+                <img data-src="./style/enamad.png" alt="نماد ۲">
+            </div>
+        </div>
+
+        <!-- ستون دوم -->
+        <div class="footer-column">
+            <h3 class="footer-title">دسترسی‌های سریع</h3>
+            <ul class="footer-links">
+                <li><a href="#">صفحه اصلی</a></li>
+                <li><a href="#">درباره ما</a></li>
+                <li><a href="#">تماس با ما</a></li>
+                <li><a href="#">محصولات</a></li>
+            </ul>
+        </div>
+
+        <!-- ستون سوم -->
+
+        <div class="footer-column">
+            <div class="footer-logo"> 
+                <img data-src="./style/logo.png" alt="لوگو" />
+            </div>
+            <p class="footer-description">
+                گیم آن ی شرکت فروش و خدمات کامپیوتر و کنسوله که از سال 98 شروع به کار کرده و تا الان به رسمیت بهترین شرکت الکترونیکی ایران میباشد 
+            </p>
+        </div>
+    </div>
+       <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/>
+        </svg>
+    <!-- کپی‌رایت -->
+    <div class="footer-copyright">
+        <a>Powered By NextWeb</a>
+        <a>© 2024 همه حقوق محفوظ است | گیم آن</a>
+    </div>
+</footer>
+
+<div class="cart-container">
+    <div class="cart-header">
+        <img data-src="./style/logo.png" alt="لوگو">
+    </div>
+    <hr class="cart-divider">
+    <div class="chart-title">
+        <p>تصویر</p>
+        <p>تعداد</p>
+        <p>محصول</p>
+    </div>
+    <div class="cart-products">
+        <!-- محصول 1 -->
+        <div class="product-card">
+            <img data-src="https://dkstatics-public.digikala.com/digikala-products/baa16fe27326c646a4d7328e9b2378f1b9d27750_1691405578.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt="محصول" loading="lazy">
+            <p>1 عدد</p>
+            <div class="product-info">
+                <h3>Viper Mini </h3>
+                <p class="product-price">200,000 تومان</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+        </div>
+        <!-- محصول 2 -->
+        <div class="product-card">
+            <img data-src="https://dkstatics-public.digikala.com/digikala-products/44da4cf34166eeb4565917cf42ef58497cf9137e_1731408326.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt="محصول" loading="lazy">
+            <p>1 عدد</p>
+            <div class="product-info">
+                <h3>Viper Mini</h3>
+                <p class="product-price">200,000 تومان</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+        </div>
+        <!-- محصول 3 -->
+        <div class="product-card">
+            <img data-src="https://dkstatics-public.digikala.com/digikala-products/c3ae922b3b4e459c59e917e11d089104bdb30bef_1717321853.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt="محصول" loading="lazy">
+            <p>1 عدد</p>
+            <div class="product-info">
+                <h3>Viper Mini</h3>
+                <p class="product-price">200,000 تومان</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+        </div>
+        <div class="product-card">
+            <img data-src="https://dkstatics-public.digikala.com/digikala-products/f37c42b5cd072161c7ac95c863450943f8a48f65_1723385709.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt="محصول" loading="lazy">
+            <p>1 عدد</p>
+            <div class="product-info">
+                <h3>Viper Mini</h3>
+                <p class="product-price">200,000 تومان</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+        </div>
+        <div class="product-card">
+            <img data-src="https://dkstatics-public.digikala.com/digikala-products/00845e59213bb59ddb870b35c85f32f7ae5afd4f_1605104492.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt="محصول" loading="lazy">
+            <p>1 عدد</p>
+            <div class="product-info">
+                <h3>Viper Mini</h3>
+                <p class="product-price">200,000 تومان</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+        </div>
+    </div>
+    <div class="cart-footer">
+        <button class="buy-button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg> ادامه خرید</button>
+        <p class="cart-note">حتما قبل خرید <a style="color: #2a47d8;" href="">قوانین و مقررات</a> سایت را مطالعه کنید</p>
+    </div>
+</div>
+    <script src="./script/IntersectionObserver.js"></script>
+    <script src="./script/ProductURLregex.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script/persianDigits.js"></script>
+    <script src="./script/productEvents.js"></script>
+    <script src="./script/tooltipHandler.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./script/swiperConfigs.js"></script>
+    <script src="./script/scrollObserver.js"></script>
+    <script type="text/javascript" src="./script/chatWidgetLoader.js"></script>
+    <script src="./script/appendIconsToSlides.js"></script>
+    <script src="./script/adjustTextDirection.js"></script>
+    <script src="./script/dropdownUI.js"></script>
+    <script src="./script/BasketOverlay.js"></script>
+    <script src="./script/TransitionConfigs.js"></script>
+    <script src="./script/MicSystem.js"></script>
+    <script src="./script/AssistantSystem.js"></script>
+    <script src="./script/PromoBarEvent.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* غیرفعال کردن رنگ هایلایت */
+
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 2px;
+}
+
+/* نوار پس‌زمینه */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* نوار اسکرول */
+::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 30px;
+}
+
+/* نوار اسکرول در حالت hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* نوار اسکرول افقی */
+::-webkit-scrollbar-horizontal {
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background: #555555;
+}
+.cover-container img {
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-image: url(data:image/svg+xml;base64,PCEtLT94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/LS0+CiAgICAgICAgICAgICAgPHN2ZyBpZD0ic3ctanMtYmxvYi1zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSI+CiAgICAgICAgICAgICAgICAgICAgPGRlZnM+IAogICAgICAgICAgICAgICAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN3LWdyYWRpZW50IiB4MT0iMCIgeDI9IjEiIHkxPSIxIiB5Mj0iMCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3RvcCBpZD0ic3RvcDEiIHN0b3AtY29sb3I9InJnYmEoMjQ4LCAxMTcsIDU1LCAxKSIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHN0b3AgaWQ9InN0b3AyIiBzdG9wLWNvbG9yPSJyZ2JhKDI1MSwgMTY4LCAzMSwgMSkiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgICAgICAgICAgICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICAgICAgICAgICAgICAgIDwvZGVmcz4KICAgICAgICAgICAgICAgIDxwYXRoIGZpbGw9InVybCgjc3ctZ3JhZGllbnQpIiBkPSJNMjIuNiwtMzQuNUMyNiwtMjguNiwyMy4zLC0xNy43LDI0LC05LjNDMjQuNywtMC45LDI4LjksNC45LDI4LjEsOS43QzI3LjMsMTQuNCwyMS41LDE4LjEsMTYsMjAuNUMxMC41LDIyLjksNS4zLDI0LjEsLTEuOSwyNi43Qy05LDI5LjMsLTE4LjEsMzMuNCwtMjUsMzEuNEMtMzIsMjkuNCwtMzYuOSwyMS41LC0zOC4xLDEzLjRDLTM5LjQsNS4zLC0zNywtMywtMzIuOSwtOS4yQy0yOC44LC0xNS40LC0yMywtMTkuNiwtMTcuMywtMjQuNkMtMTEuNSwtMjkuNywtNS43LC0zNS43LDEuOSwtMzguNEM5LjYsLTQxLDE5LjIsLTQwLjMsMjIuNiwtMzQuNVoiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUwIDUwKSIgc3Ryb2tlLXdpZHRoPSIwIiBzdHlsZT0idHJhbnNpdGlvbjogMC4zczsiPjwvcGF0aD4KICAgICAgICAgICAgICA8L3N2Zz4=);
+}

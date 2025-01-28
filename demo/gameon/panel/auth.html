@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود و ثبت‌نام</title>
+    <style>
+        @font-face {
+            font-family: 'IranSans';
+            src: url('../style/font/IranSans.ttf') format('truetype');
+        }
+        
+        * {
+            font-family: 'IranSans', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #linked {
+            color: #0070D9;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #F0F0F0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            height: 500px;
+            padding: 30px;
+            background: white;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            border-radius: 30px;
+
+        }
+        
+        .form {
+            position: relative;
+            display: none;
+            height: 100%;
+        }
+        .form.active {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            margin: 0 auto 30px auto;
+            width: 350px;
+        }
+        .form h2 {
+            margin-top: -7px;
+            width: 90%;
+            font-weight: 500;
+            text-align: right;
+            font-size: 15px;
+            color: #929292;
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 90%;
+            padding: 10px;
+            background-color: #EFEFEF;
+            border: none;
+            margin: 0px auto;
+            border-radius: 50px;
+            text-align: left;
+        }
+        input::placeholder{
+            position: relative;
+            padding-left: 5px;
+            color: #969696;
+            font-size: 12px;
+        }
+        input:enabled {
+            outline: none;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .form h1 {
+            width: 90%;
+            font-weight: 500;
+            text-align: right;
+            font-size: 22px;
+            color: #404040;
+        }
+        .input {
+            margin: 30px 0px;
+            width: 100%;
+            display: flex;
+            gap: 12px;
+            flex-direction: column;
+        }
+        .confirm {
+            margin-top: 20px;
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            vertical-align: middle;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .confirm-action {
+            color: white;
+            background-color: #C34242;
+            padding: 7px 25px;
+            font-size: 15px;
+            border-radius: 50px;
+            transition: all 0.2s ease-in-out;
+        }
+        .confirm-action:hover {
+            background-color: #811515;
+        }
+
+        .confirm p {
+            font-size: 12px;
+        }
+        .close-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 20px;
+            font-size: 20px;
+        }
+        .close-button svg {
+            fill: rgb(148, 148, 148);
+        }
+
+
+        .checkbox-container input {
+            display: none;
+          }
+          
+          .checkbox-container {
+            display: block;
+            position: relative;
+            cursor: pointer;
+            font-size: 14px;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+          }
+          
+          /* Create a custom checkbox */
+          .checkmark {
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 1.3em;
+            width: 1.3em;
+            background-color: #2196F300;
+            border-radius: 0.45em;
+            transition: all 0.25s;
+          }
+          
+          /* When the checkbox is checked, add a blue background */
+          .checkbox-container input:checked ~ .checkmark {
+            background-color: #0f9214;
+          }
+          
+          /* Create the checkmark/indicator (hidden when not checked) */
+          .checkmark:after {
+            content: "";
+            position: absolute;
+            transform: rotate(0deg);
+            border: 0.2em solid #0f9214;
+            left: 0;
+            top: 0;
+            width: 1.05em;
+            height: 1.05em;
+            border-radius: 0.45em;
+            transition: all 0.25s, border-width 0.1s;
+          }
+          
+          /* Show the checkmark when checked */
+          .checkbox-container input:checked ~ .checkmark:after {
+            left: 0.45em;
+            top: 0.25em;
+            width: 0.25em;
+            height: 0.5em;
+            border-color: #fff0 white white #fff0;
+            border-width: 0 0.15em 0.15em 0;
+            border-radius: 0em;
+            transform: rotate(45deg);
+          }
+          .policy {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: -17px;
+          }
+          .policy p {
+            margin-left: 6px;
+            font-size: 11px;
+
+          }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="close-button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+    <div class="container">
+        <!-- فرم ورود -->
+        <img class="logo" src="../style/logo.png" alt="">
+
+        <div id="loginForm" class="form">
+            <h1>ورود به حساب</h1>
+            <h2>لطفا شماره  یا نام کاربری به همراه رمز خود را وارد کنید</h2>
+            <div class="input">
+                <input type="text" placeholder="نام کاربری یا شماره همراه">
+                <input type="password" autocomplete="on" placeholder="رمز عبور">
+            </div>
+            <div class="confirm">
+                <a href="#" class="confirm-action" >ادامه</a>
+                <p>درصورت داشتن هرگونه مشکل <a id="linked" href="#">اینجا</a> کلیک کنید</p>
+            </div>
+
+        </div>
+
+        <!-- فرم ثبت‌نام -->
+
+
+
+        <form id="signupForm" class="form" method="POST" action="backend.php">
+            <h1>ساخت حساب</h1>
+            <h2>لطفا ایمیل خود را وارد نمایید</h2>
+            <div class="input">
+                <input type="email" name="email" placeholder="gameonstore@gmail.com" autocomplete="on" required>
+            </div>
+            <div class="confirm">
+                <!-- اینجا لینک به جای دکمه استفاده شده -->
+                <a class="confirm-action" id="submitSignup">ادامه</a>
+                <p>درصورت داشتن هرگونه مشکل <a id="linked" href="#">اینجا</a> کلیک کنید</p>
+            </div>
+            <div class="policy">
+                <label class="checkbox-container">
+                    <input type="checkbox" required>
+                    <div class="checkmark"></div>
+                </label>
+                <p>تمام <a id="linked" href="#">قوانین و مقررات</a> سایت گیم آن رو مطالعه کردم</p>
+            </div>
+        </form>
+       
+    </div>
+
+    <script>
+        // گرفتن پارامتر از URL
+        const params = new URLSearchParams(window.location.search);
+        const mode = params.get("mode");
+
+        // نمایش فرم بر اساس پارامتر
+        if (mode === "signup") {
+            document.getElementById("signupForm").classList.add("active");
+        } else {
+            document.getElementById("loginForm").classList.add("active");
+        }
+    </script>
+</body>
+</html>
